@@ -7,7 +7,7 @@ A full-stack web application that leverages NVIDIA's advanced AI model (Llama 3.
 > **Note:** Live demo may take 30 seconds to wake up on first request (Render free tier limitation). For deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ![Screenshot of the AI Threat Detector Application](https://user-images.githubusercontent.com/10284367/223212870-272a11b6-7d1c-43f0-8e7c-501f6f874d1a.png)
-*(**Note:** To replace this placeholder image, simply take a screenshot of your app, upload the image file to your GitHub repository, and replace the link above with the new image's URL.)*
+_(**Note:** To replace this placeholder image, simply take a screenshot of your app, upload the image file to your GitHub repository, and replace the link above with the new image's URL.)_
 
 ---
 
@@ -30,17 +30,20 @@ A full-stack web application that leverages NVIDIA's advanced AI model (Llama 3.
 This project is a full-stack application with a clear separation of concerns between the client, server, and the external AI service, creating a robust and scalable system.
 
 - **Frontend (Client):**
+
   - **Framework:** React.js
   - **Styling:** Tailwind CSS
   - **HTTP Client:** `axios` (for simple requests) & the browser's native `fetch` API (for handling streams).
   - **Markdown Rendering:** `react-markdown` to beautifully render the AI's formatted responses.
 
 - **Backend (Server):**
+
   - **Runtime:** Node.js
   - **Framework:** Express.js for creating the API endpoints and handling routing.
   - **Security:** `dotenv` for managing environment variables and `cors` for secure cross-origin communication.
 
 - **AI Service:**
+
   - **Provider:** NVIDIA Integrate API
   - **Model:** `nvidia/llama-3.3-nemotron-super-49b-v1.5` - An advanced model optimized for comprehensive security analysis
   - **Features:** 8192 max tokens, streaming responses, intelligent reasoning process filtering
@@ -56,6 +59,7 @@ This project is a full-stack application with a clear separation of concerns bet
 ### Recent Updates & Improvements
 
 **Latest Version (v2.0)** includes:
+
 - ✅ Upgraded to NVIDIA Llama 3.3 Nemotron Super 49B v1.5
 - ✅ Intelligent `<think>` tag filtering - hides AI reasoning for cleaner output
 - ✅ Enhanced markdown formatting with custom styling
@@ -73,18 +77,21 @@ This project is a full-stack application with a clear separation of concerns bet
 ### Installation & Setup
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/miki42v/ai-threat-detector.git
    cd ai-threat-detector
    ```
 
 2. **Set up the Backend (Server):**
+
    ```bash
    cd server
    npm install
    ```
 
 3. **Configure Environment Variables:**
+
    - Create a `.env` file in the `server` directory:
      ```bash
      echo "NVIDIA_API_KEY=your-api-key-here" > .env
@@ -92,6 +99,7 @@ This project is a full-stack application with a clear separation of concerns bet
    - Get your NVIDIA API key from [https://build.nvidia.com/](https://build.nvidia.com/)
 
 4. **Set up the Frontend (Client):**
+
    ```bash
    cd ../client
    npm install
@@ -106,17 +114,21 @@ This project is a full-stack application with a clear separation of concerns bet
 ### Running the Application
 
 1. **Start the Backend Server:**
+
    ```bash
    cd server
    node server.js
    ```
+
    Server will run on `http://localhost:5001`
 
 2. **Start the Frontend (in a new terminal):**
+
    ```bash
    cd client
    npm start
    ```
+
    Frontend will run on `http://localhost:3000`
 
 3. **Open your browser** and navigate to `http://localhost:3000`
@@ -128,6 +140,7 @@ This project is a full-stack application with a clear separation of concerns bet
 For detailed deployment instructions to production (Vercel + Render), see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 **Quick Summary:**
+
 - **Backend**: Deploy to Render with `NVIDIA_API_KEY` environment variable
 - **Frontend**: Deploy to Vercel with `REACT_APP_API_URL` pointing to your Render backend
 
@@ -167,12 +180,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **React** and **Tailwind CSS** for the frontend framework and styling
 - **Express.js** for the backend framework
 - The open-source community for continuous inspiration and support
-
----
-
-## 📧 Contact
-
-Project Link: [https://github.com/miki42v/ai-threat-detector](https://github.com/miki42v/ai-threat-detector)
 
 ---
 
